@@ -6,12 +6,12 @@ I do not provided the e-book itself, only the script to create it on your own.
 
 # Context 
 
-In 2018/2019, Sequoia Capital published a series of articles on the topic of product analytics with around 30 different articles.
+In 2018-2019, Sequoia Capital published a series of articles on the topic of product analytics with around 30 different articles.
 
 I like to read long texts on an e-ink reader and decided to make a small ebook out of the articles.
 
 This is what the Python script does:
-- It create a table of contents at the beginning of the book,
+- It create a table of contents at the beginning of the book. There is one link for each article published and each link brings you to the corresponding question in the book.
 - It preserves the images included in the articles and places them in the right place,
 - It formats all of the above into a simple ebook and saves it on disk in the `output/` folder.
 
@@ -19,8 +19,8 @@ This script is hyper-specific to this article series and cannot be re-used for a
 
 # How to use
 
-1. You need to both files `get_urls.py` and `run_this.py`.
-1. `get_urls.py` will fetch all the URLs of the articles under "[_Building Products Using Data_](https://articles.sequoiacap.com/building-products-using-data)". One of the articles ("[_Analyzing Metric Changes_](https://articles.sequoiacap.com/analyzing-metric-changes)" also includes its own list of sub-articles and it will fetch them too.
+1. You need to download both files `get_urls.py` and `run_this.py`.
+1. No need to run `get_urls.py`. It will be imported by the other Python script. It will fetch all the URLs of the articles under "[_Building Products Using Data_](https://articles.sequoiacap.com/building-products-using-data)". One of the articles ("[_Analyzing Metric Changes_](https://articles.sequoiacap.com/analyzing-metric-changes)" also includes its own list of sub-articles and it will fetch them too.
    - Install the libraries required `requests` and `bs4`
 1. `run_this.py` is the script that you need to run.
     - Install the additional libraries required: `html`, `ebooklib`.
